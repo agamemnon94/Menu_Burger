@@ -3,15 +3,15 @@ window.addEventListener('load', () => {
 })
 
 // Menu burger
-const btnBurger = document.querySelector('.cont__lignes');
+const btnBurger = document.querySelector('.container__burger');
 let navBar = document.querySelector('.nav__container');
 let items = document.querySelectorAll('.a_nav')
 
 function burger() {
   btnBurger.classList.toggle('active')
   navBar.classList.toggle('active__menu');
-  items.forEach(element => {
-    element.classList.toggle('active');
+  items.forEach(item => {
+    item.classList.toggle('active');
   });
 }
 btnBurger.addEventListener('click', burger);
