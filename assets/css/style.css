@@ -93,7 +93,7 @@ body {
   top: 15px;
   right: 15px;
   padding: 8px;
-  border-radius: 10px;
+  border-radius: 8px;
   background: #333;
   box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.6);
   height: 55px;
@@ -129,16 +129,16 @@ body {
 .lignes:nth-child(3) {
   top: 34px;
 }
-.burger__btn.active .lignes:nth-child(1) {
+.cont__lignes.active .lignes:nth-child(1) {
   top: 18px;
   transform: rotate(135deg);
   background: coral;
 }
-.burger__btn.active .lignes:nth-child(2) {
+.cont__lignes.active .lignes:nth-child(2) {
   opacity: 0;
   transform: translateX(-20px);
 }
-.burger__btn.active .lignes:nth-child(3) {
+.cont__lignes.active .lignes:nth-child(3) {
   top: 18px;
   transform: rotate(-135deg);
   background: coral;
