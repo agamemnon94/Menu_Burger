@@ -110,8 +110,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
-  /* background: rgba(255, 204, 212, 0.801); */
-  pointer-events: none;
 }
 .lignes {
   width: 100%;
@@ -119,7 +117,8 @@ body {
   border-radius: 5px;
   background: #f1f1f1;
   position: absolute;
-  transition: all 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, top 0.5s 0.5s ease-in-out,
+    opacity 0.5s 0.5s ease-in-out;
 }
 
 .lignes:nth-child(1) {
@@ -135,15 +134,17 @@ body {
   top: 13px;
   transform: rotate(135deg);
   background: coral;
+  transition: top 0.5s ease-in-out, transform 0.5s 0.5s ease-in-out;
 }
 .cont__lignes.active .lignes:nth-child(2) {
   opacity: 0;
-  transform: translateX(-20px);
+  background: coral;
 }
 .cont__lignes.active .lignes:nth-child(3) {
   top: 13px;
   transform: rotate(-135deg);
   background: coral;
+  transition: top 0.5s ease-in-out, transform 0.5s 0.5s ease-in-out;
 }
 /************************/
 /****** ANIMATIONS ******/

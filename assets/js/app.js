@@ -3,7 +3,7 @@ window.addEventListener('load', () => {
 })
 
 // Menu burger
-const btnBurger = document.querySelector('.container__burger');
+const btnBurger = document.querySelector('.cont__lignes');
 let navBar = document.querySelector('.nav__container');
 let items = document.querySelectorAll('.a_nav')
 
