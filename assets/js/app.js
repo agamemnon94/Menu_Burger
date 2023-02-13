@@ -1,7 +1,3 @@
-window.addEventListener('load', () => {
-  document.body.classList.remove("clean__transition");
-})
-
 // Menu burger
 const btnBurger = document.querySelector('.cont__lignes');
 let navBar = document.querySelector('.nav__container');
